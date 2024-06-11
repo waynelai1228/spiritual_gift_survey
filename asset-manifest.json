@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/spiritual_gift_survey/static/css/main.6c122259.css",
-    "main.js": "/spiritual_gift_survey/static/js/main.a84be8e5.js",
+    "main.js": "/spiritual_gift_survey/static/js/main.bba878e5.js",
     "static/js/453.4eea5bb3.chunk.js": "/spiritual_gift_survey/static/js/453.4eea5bb3.chunk.js",
     "index.html": "/spiritual_gift_survey/index.html",
     "main.6c122259.css.map": "/spiritual_gift_survey/static/css/main.6c122259.css.map",
-    "main.a84be8e5.js.map": "/spiritual_gift_survey/static/js/main.a84be8e5.js.map",
+    "main.bba878e5.js.map": "/spiritual_gift_survey/static/js/main.bba878e5.js.map",
     "453.4eea5bb3.chunk.js.map": "/spiritual_gift_survey/static/js/453.4eea5bb3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6c122259.css",
-    "static/js/main.a84be8e5.js"
+    "static/js/main.bba878e5.js"
   ]
 }

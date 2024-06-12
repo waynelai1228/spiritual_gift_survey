@@ -1,12 +1,12 @@
 import './App.css';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { useLocation, Navigate } from 'react-router-dom';
 
 
 
 function Result() {
   const { state } = useLocation();
-  const [gifts, setGifts] = useState([
+  const [gifts] = useState([
                               {description: "Leadership", metrics: [5, 15, 26, 42, 64]},
                               {description: "Administration", metrics:[0, 16, 30, 46, 58]}, 
                               {description: "Teaching",metrics:[1, 17, 32, 60, 72]},

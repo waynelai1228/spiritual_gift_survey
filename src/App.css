@@ -45,9 +45,12 @@
   text-align: center;
   text-decoration: none;
 }
-.Link-button:hover {
-  background-color: #61dafb;
-  color: white;
+/* apply hover to only device that supports hover */
+@media (hover: hover) {
+  .Link-button:hover {
+    background-color: #61dafb;
+    color: white;
+  }
 }
 .Link-button-selected {
   background-color: #61dafb;

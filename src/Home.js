@@ -1,5 +1,6 @@
 import './App.css';
 import questionsJSON from './questions.json';
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -10,9 +11,9 @@ function Home() {
             There are {questionsJSON.length} questions. The scores are from strongly disagree (1) to strongly agree (5).<br />
             Answer what you think describes you the best!
           </p>
-        <a className="Link-button" href="/questions" target="_self" rel="noopener noreferrer">
+        <Link className="Link-button" to="/questions">
           Begin
-        </a>
+        </Link>
       </header>
     </div>
   );

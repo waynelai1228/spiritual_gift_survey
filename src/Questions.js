@@ -4,12 +4,20 @@ import { useState } from 'react';
 import { Link } from "react-router-dom";
 
 function Questions() {
+  // the questions on the page are displayed according to this state variable
   const [questionNumber, setQuestionNumber] = useState(0);
+  // this variable stores the label on the option button
   const [optionLabels] = useState([1,2,3,4,5]);
+  // the entire array of answer is stored here
   const [answers, setAnswers] = useState(Array(questionsJSON.length).fill(0));
+  // this variable is for controlling the visual of the 5 labels after one is pressed
   const [labelStyles, setLabelStyles] = useState(Array(5).fill("Link-button"));
+  // this variable controls whether the submit button should be showing
   const [submitVisible, setSubmitVisible] = useState(false);
 
+  const [animation] = useState(true);
+
+  // after changing question or selecting an option, call this function to change the visual of the button
   function updateLabelStyles(answers: Array, questionNumber: Number) {
     let nextLabelStyles = Array(5).fill("Link-button");
     const currentAnswer = answers[questionNumber];
@@ -55,10 +63,10 @@ function Questions() {
   return (
     <div className="App">
       <header className="App-header">
-          <h1>Question {questionNumber + 1}</h1>
-          <p>
-            {questionsJSON[questionNumber].question}
-          </p>
+        <h1>Question {questionNumber + 1}</h1>
+        <p>
+          {questionsJSON[questionNumber].question}
+        </p>
 
         <div className="Link-container">
           {[...Array(5)].map((_,i) => 
@@ -67,7 +75,7 @@ function Questions() {
             </div>
           )}
         </div>
-
+  
         <div className="Link-container">
           <div className="Link-button" onClick={() => changeQuestion(-1)}>
             Prev

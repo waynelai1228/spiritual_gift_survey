@@ -56,7 +56,7 @@ function Result() {
     } catch (e) {
       console.error(e);
     }
-    const newSortedGiftScores = giftScores.map((_, i) => [i, _]).sort((a,b) => a[1] < b[1]);
+    const newSortedGiftScores = giftScores.map((_, i) => [i, _]).sort((a,b) => b[1] - a[1]);
     setSort(true);
     setSortedGiftScores(newSortedGiftScores);
   }
